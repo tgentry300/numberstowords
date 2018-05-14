@@ -8,14 +8,16 @@ function countFunction() {
     for (let h = 0; h < hundredsGroup.length; h++) {
         for (let t = 0; t < tensGroup.length; t++) {
             for (let o = 0; o < onesGroup.length; o++) {
-                if(t===1 && o!==0 ){
-                    numbers += ":"+hundredsGroup[h] + teensGroup[o] +" ";
-                }else
+                if (t === 1 && o !== 0) {
+                    numbers += ":" + hundredsGroup[h] + teensGroup[o] + " ";
+                } else
                     numbers += ":" + hundredsGroup[h] + tensGroup[t] + onesGroup[o] + " ";
-                }
             }
-
+            
         }
+
+    }
     return numbers;
 }
 document.write(countFunction())
+document.write(" :one thousand")
